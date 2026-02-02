@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
+
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.prototype.dns</string>
+
+      <key>PayloadUUID</key>
+      <string>11111111-2222-3333-4444-555555555555</string>
+
+      <key>PayloadDisplayName</key>
+      <string>DNS Prototipo</string>
+
+      <key>DNSSettings</key>
+      <dict>
+        <key>ServerAddresses</key>
+        <array>
+          <string>1.1.1.1</string>
+          <string>1.0.0.1</string>
+        </array>
+      </dict>
+    </dict>
+  </array>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadIdentifier</key>
+  <string>com.prototype.profile</string>
+
+  <key>PayloadUUID</key>
+  <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE</string>
+
+  <key>PayloadDisplayName</key>
+  <string>Perfil DNS – Prototipo</string>
+
+  <key>PayloadOrganization</key>
+  <string>Prototype Lab</string>
+
+</dict>
+</plist>
