@@ -1,93 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 
-  <!-- PERFIL RAÍZ -->
   <key>PayloadType</key>
   <string>Configuration</string>
-
   <key>PayloadVersion</key>
   <integer>1</integer>
-
   <key>PayloadIdentifier</key>
   <string>com.vertil.diary.profile</string>
-
   <key>PayloadUUID</key>
   <string>6F8A2A10-1C3A-4B6D-9F10-AAA111BBB222</string>
-
   <key>PayloadDisplayName</key>
   <string>Diary</string>
-
   <key>PayloadDescription</key>
   <string>Perfil que instala Diary como app web y configura DNS seguro.</string>
-
   <key>PayloadOrganization</key>
   <string>Vertil</string>
 
-  <!-- CONTENIDO DEL PERFIL -->
   <key>PayloadContent</key>
   <array>
 
-    <!-- DNS over HTTPS (Cloudflare) -->
+    <!-- DNS seguro -->
     <dict>
       <key>PayloadType</key>
       <string>com.apple.dnsSettings.managed</string>
-
       <key>PayloadVersion</key>
       <integer>1</integer>
-
       <key>PayloadIdentifier</key>
       <string>com.vertil.diary.dns</string>
-
       <key>PayloadUUID</key>
       <string>6F8A2A10-1C3A-4B6D-9F10-AAA111BBB223</string>
-
       <key>PayloadDisplayName</key>
       <string>Diary DNS Seguro</string>
-
       <key>DNSSettings</key>
       <dict>
         <key>DNSProtocol</key>
         <string>HTTPS</string>
-
         <key>ServerURL</key>
         <string>https://cloudflare-dns.com/dns-query</string>
       </dict>
     </dict>
 
-    <!-- WEB CLIP (ICONO EN HOME SCREEN) -->
+    <!-- Web Clip / Icono -->
     <dict>
       <key>PayloadType</key>
       <string>com.apple.webClip.managed</string>
-
       <key>PayloadVersion</key>
       <integer>1</integer>
-
       <key>PayloadIdentifier</key>
       <string>com.vertil.diary.webclip</string>
-
       <key>PayloadUUID</key>
       <string>6F8A2A10-1C3A-4B6D-9F10-AAA111BBB224</string>
-
       <key>Label</key>
       <string>Diary</string>
-
       <key>URL</key>
       <string>https://d-ary-of-familly-vertil.pages.dev</string>
-
       <key>IconURL</key>
       <string>https://res.cloudinary.com/dcclzhsim/image/upload/v1769986641/IMG_1484_h6oqhs.png</string>
-
       <key>FullScreen</key>
       <true/>
-
       <key>IsRemovable</key>
       <true/>
     </dict>
 
   </array>
-
 </dict>
 </plist>
